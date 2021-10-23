@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Survey form</title>
+
+</head>
+
+<body>
+    <img
+        src="https://blogs.iadb.org/efectividad-desarrollo/wp-content/uploads/sites/23/2015/02/desplazados-colombia.jpg">
+    <main class="main">
+        <h1 id="title">Encuesta de mujeres desplazadas</h1>
+        <p id="description">Estamos aquí para ayudarte</p>
+        <form id="survey-form">
+            <div class="input nombre">
+                <label id="name-label" for="name">Nombre</label>
+                <input id="name" type="text" placeholder="Ingresa nombre" required>
+            </div>
+            <div class="input mail">
+                <label id="email-label" for="email">Correo Electronico</label>
+                <input id="email" type="email" placeholder="Ingresa Email" required>
+            </div>
+            <div class="input numero">
+                <label id="number-label" for="number">Edad</label>
+                <input id="number" min="18" max="100" type="number" placeholder="Ingresa tu edad" required>
+            </div>
+            <div class="input opciones">
+                <label for="dropdown">¿Cúal es tu situación?</label>
+                <select id="dropdown">
+                    <option>Selecciona una opción ....</option>
+                    <option>Desplazada Extranjera</option>
+                    <option>Desplazada Por Conflicto En Zona Rural</option>
+                    <option>Desplazada Por Maltrato Intrafamiliar</option>
+                    <option>Desplazada Por Discapacidad</option>
+
+                </select>
+            </div>
+            <div class="input radio-btn">
+                <fieldset id="hola">
+                    <legend>Selecciona tú rango de edad</legend>
+                    <label class="radio" for="hola"><input type="radio" name="hola" value="hg">De 15 a 32 años</label>
+
+                    <label class="radio" for="hola"><input type="radio" name="hola" value="as">De 33 a 58 años</label>
+                    <label class="radio" for="hola"> <input type="radio" name="hola" value="dfa">De 58 a 65 años
+                    </label>
+                </fieldset>
+            </div>
+            <div class="input checkbox-btn">
+
+                <fieldset>
+                    <legend>En que tipo de vivienda habitas</legend>
+                    <label class="check" for="hola"> <input type="checkbox" name="hola" value="hg">Rentada
+                    </label>
+                    <label class="check" for="hola"> <input type="checkbox" name="hola" value="as">Hostal
+                    </label>
+                    <label class="check" for="hola"> <input type="checkbox" name="hola" value="dfa">Refugio
+                    </label>
+                </fieldset>
+            </div>
+
+            <div class="input textarea">
+                <label for="message">Escribe un mensaje</label>
+                <textarea id="message" rows="4" cols="80" name="message">
+            </textarea>
+            </div>
+            <div class="btn">
+                <button id="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
